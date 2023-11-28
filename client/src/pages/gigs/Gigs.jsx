@@ -1,7 +1,16 @@
+import { useState } from "react"
 import "./Gigs.css"
-
+import GigCard from "../../components/GigCard/GigCard"
+import { gigs } from "../../data"
 const Gigs = () => {
-  return (
+  const[sort,setSort]=useState("sales")    //since api will include sales=best selling ,createdAt=newest
+  const[open,setOpen]=useState(false)     //false-close  true-open //initially open's value is set to false matlab closed
+ 
+  const reSort =(type)=>{        //type will be assigned values ; sales or created at or any more
+  setSort(type)
+  setOpen(false)
+ }
+  return (                                 
     <div className="gigs">
     <div className="gigs-container">
       <span className="title">FREELANCE - AI SERVICES</span>
@@ -11,20 +20,34 @@ const Gigs = () => {
 <span>Explore with Freelance</span>
 <div className="budget">
 <span>Budget</span>
-<input type="number" placeholder="min"></input>
-<input type="number" placeholder="max"></input>
-<button>Apply</button>
+<input className="gigs-input" type="number" placeholder="min"></input>
+<input className="gigs-input" type="number" placeholder="max"></input>
+<button className="gigs-button">Apply</button>
 </div>
       </div>
-      <div className="right">
+      <div className="gigs-right">
         <span className="sortby" >Sortby</span>
-        <span className="sortby" >Popular</span>
-        <img src="./img/down.png"></img>
-        <span className="sortby" >Newest</span>
-
+        
+        <span className="sort" >{sort==="sales"?"Best Selling":"Newest"}</span> 
+        {/* ternary operator only works for when there are two categories to sort from */}
+        <img src="./img/down.png" onClick={()=>setOpen(!open)}></img>  
+        {/* sets open value to true matlab open */}
+        {open &&(
+        <div className="right-menu">
+        { sort==="sales"? <span onClick={()=>reSort("createdAt")} className="sort" >Newest</span> :
+        
+        <span  onClick={()=>reSort("sales")} className="sort" >Best Selling</span>}
+</div>
+       ) }
       </div>
       </div>
     </div>
+    
+      {gigs.map(gig=>
+        <GigCard item={gig} key={gig.id}/>
+
+      )}
+    
    
     </div>
   )

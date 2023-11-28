@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom"
 import PropTypes from 'prop-types';
+import "./GigCard.css"
+
 const GigCard = ({item}) => {
     console.log(item)
   return (

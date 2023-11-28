@@ -1,0 +1,7 @@
+
+.gigcard-container{
+    display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates a grid with three equal columns */
+  gap: 10px; /* Adds a 10px gap between grid items */
+  padding: 20px; 
+}

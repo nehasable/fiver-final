@@ -1,6 +1,6 @@
 .gigs{
     display: flex;
-    
+
     
 }
 .gigs-container{
@@ -8,49 +8,74 @@
     width: 100%;
     
     flex-direction: column; 
-    margin-right: 30px
+   
      
 }
 .gigs-container .title{
     font-weight: 400;
     color: gray;
-    padding: 20px 20px 0;
+   padding-left: 50px;
+   padding-top: 20px;
+    
+   
 
 }
 .gigs-menu{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 .left .budget{
     display: flex;
     gap: 20px;align-items: center;
 }
-.left input{
+.gigs-input{
     padding: 5px;
     border: 1px solid lightgray;
     border-radius: 5px;
     outline: none;
 }
-.left input::placeholder{
+.gigs-input::placeholder{
     color: lightgrey;
 }
-.left button{
+.gigs-button{
     height: 30px;
     width: 60px;
-    background-color: green;
-    border: 1px solid green;
+    background-color: rgb(95, 209, 95);
+    border: 1px solid rgb(95, 209, 95) ;
     border-radius: 5px;
 }
-.right{
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.gigs-right{
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-right: 90px;
 }
-.right img{
+.gigs-right img{
+    position: relative;
     width: 20px;
     height: 20px;
     cursor: pointer;
 }
-
+.right-menu {
+    padding: 20px;
+    background-color: white;
+    border: 0.5px solid lightgrey;
+    border-radius: 5px;
+    position: absolute;
+    margin-top: 135px;
+    /* margin-right: 10px; */
+    right: 0;
+    z-index: 9;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: #555;
+    
+}
+.sortby{
+    color: gray;
+}
 
