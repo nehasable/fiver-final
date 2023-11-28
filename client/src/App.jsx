@@ -31,7 +31,7 @@ return(
       children:[
         {
           path: "/",
-          element: <Home />,
+          element: <Home/>,
         },
         {
         path: "/gigs",

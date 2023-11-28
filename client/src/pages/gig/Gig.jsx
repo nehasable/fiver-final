@@ -1,10 +1,8 @@
 // import React from 'react'
-
+//----------------selected gig is displayed here------------------
 const Gig = () => {
   return (
-    <div>
-      gig
-    </div>
+    <div className="new">hi</div>
   )
 }
 

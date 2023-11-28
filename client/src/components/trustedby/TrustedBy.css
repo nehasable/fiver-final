@@ -6,11 +6,15 @@
     gap: 20px;
     padding: 20px;
     background-color: #fafafa;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-items: center;
 }
 .trustedby span{
-    color: gray;
+    color:lightgray;
+    font-weight: bold;
 }
 .trustedby img{
     object-fit: contain;
+    height: 60px;
+    width: 60px;
 }
