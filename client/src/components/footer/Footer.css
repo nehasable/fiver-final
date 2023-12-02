@@ -4,6 +4,7 @@
     background-color: rgb(240, 240, 240);
     justify-content: center;
     width: 100%;
+    z-index: 999;
 }
 .footer-container{
     display: flex;
