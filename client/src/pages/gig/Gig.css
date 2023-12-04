@@ -4,7 +4,9 @@
     flex-direction:column ;
     height: 100%;
 }
-
+.gig-container{
+    width: 900px;
+}
 .gig-user{
     display: flex;
     align-items: center;
@@ -159,7 +161,7 @@
       width: 24px;
       border-radius: none;
     }
-.right{
+.gig-right{
     position: fixed;
     top: 0;
     right: 0;
@@ -171,7 +173,7 @@
     margin-top: 30px;
     
 }
-    .price {
+    .gig-price {
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -182,7 +184,7 @@
         height: 20px;
         width: 20px;
     }
-   .price p{
+   .gig-price p{
         color: gray;
         margin-left:  10px;
       }

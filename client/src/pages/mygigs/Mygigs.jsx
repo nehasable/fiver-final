@@ -2,8 +2,10 @@
 
 const Mygigs = () => {
   return (
-    <div>
-      Mygigs
+    <div className="mygigs">
+      <h1>Gigs</h1>
+      <button className="price-btn">Add new Gig</button>
+      
     </div>
   )
 }
