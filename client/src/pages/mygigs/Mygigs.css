@@ -1,0 +1,44 @@
+.mygigs{
+    display: flex;
+    justify-content: center;
+    color: #555;
+}
+.mygigs-container{
+    width: 1400px;
+    padding: 50px 0px;
+}
+.mygigs-title{
+    display: flex;
+    justify-content: space-between;
+}
+.mygigs-button{
+    background-color: #1dbf73;
+        color: white;
+        font-weight: 500;
+        border: none;
+        border-radius: 5px;
+        padding: 5px;
+        margin-right: 10px;
+        cursor: pointer;
+}
+.mygigs table{
+    width: 100%;
+}
+.mygigs tr{
+    height: 50px;
+}
+.mygigs th{
+    
+        text-align: left;
+      
+}
+.mygigs-image {
+    width: 50px;
+    height: 25px;
+    object-fit: cover;
+  }
+
+  .mygigs-delete {
+    width: 20px;
+    cursor: pointer;
+  }

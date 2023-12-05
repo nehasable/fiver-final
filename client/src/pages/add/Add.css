@@ -1,0 +1,73 @@
+.addpage {
+    display: flex;
+    justify-content: center;
+}
+    .add-container {
+      width: 1400px;
+      padding: 50px 0px;
+    }
+   .add-container h1 {
+        width: max-content;
+        margin-bottom: 30px;
+        color: gray;
+        font-weight: 300;
+      }
+      .sections {
+        display: flex;
+        justify-content: space-between;
+        gap: 100px;
+      }
+      .sections label {
+        color: gray;
+        font-size: 18px;
+      }
+      .add-info{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: space-between;
+      }
+      .add-info input{
+        padding: 20px;
+
+      }
+      .add-info select{
+        padding: 20px;
+
+      }
+      .add-info textarea{
+        padding: 20px;
+
+      }
+
+      .add-details{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: space-between;
+      }
+      .add-details input{
+        padding: 20px;
+
+      }
+      .add-details select{
+        padding: 20px;
+
+      }
+      .add-details textarea{
+        padding: 20px;
+
+      }
+      .add-btn{
+        
+            border: none;
+            padding: 20px;
+            color: white;
+            font-weight: 500;
+            font-size: 18px;
+            background-color: #1dbf73;
+            cursor: pointer;
+          }
+      
