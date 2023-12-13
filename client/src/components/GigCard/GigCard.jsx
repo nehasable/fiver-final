@@ -8,18 +8,23 @@ const GigCard = ({item}) => {
     <Link to="/gig/Ai" className="link">
     <div className="gig-card">
     <div className="gigcard-container">
-        <img src={item.img} alt=""></img>
-        <div className="profile">
+    <div className="work">
+        <img  src={item.img} alt=""></img>
+        </div>
+        <div className="gigcard-profile">
+          <div className="gigcard-user">
             <img src={item.pp} alt=""></img>
             <span>{item.username}</span>
+            </div>
             <span>{item.desc}</span>
             <div className="star">
             <img src="./img/star.png" alt="" />
             <span>{item.star}</span>
             </div>
         </div>
-        <div className="details">
-        <span>{item.price}</span>
+        <div className="gigcard-price">
+        <span> STARTING AT</span>
+        <h2>$ {item.price}</h2>
 
         </div>
     </div>

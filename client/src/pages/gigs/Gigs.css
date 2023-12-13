@@ -59,7 +59,7 @@
     height: 20px;
     cursor: pointer;
 }
-.right-menu {
+.gigs-right-menu {
     padding: 20px;
     background-color: white;
     border: 0.5px solid lightgrey;
@@ -70,7 +70,7 @@
     right: 0;
     z-index: 9;
     display: flex;
-    flex-direction: column;
+
     gap: 5px;
     color: #555;
     
@@ -78,4 +78,9 @@
 .sortby{
     color: gray;
 }
-
+.gigs-cards {
+    top: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }

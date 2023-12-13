@@ -225,7 +225,7 @@ const Gig = () => {
             <div className="details-item">
               <img src="/img/clock.png" alt="" className="" />
               <span>2 Days Delivery</span></div>
-              <div className="features">
+              <div className="price-features">
               <div className="price-item">
               <img src="/img/greencheck.png" alt="" className="" /> 
               <span>Immersive Outlook</span></div>

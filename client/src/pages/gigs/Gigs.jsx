@@ -33,22 +33,22 @@ const Gigs = () => {
         <img src="./img/down.png" onClick={()=>setOpen(!open)}></img>  
         {/* sets open value to true matlab open */}
         {open &&(
-        <div className="right-menu">
+        <div className="gigs-right-menu">
         { sort==="sales"? <span onClick={()=>reSort("createdAt")} className="sort" >Newest</span> :
         
         <span  onClick={()=>reSort("sales")} className="sort" >Best Selling</span>}
-</div>
+       </div>
        ) }
       </div>
       </div>
-    </div>
     
+    <div className="gigs-cards">
       {gigs.map(gig=>
         <GigCard item={gig} key={gig.id}/>
 
       )}
-    
-   
+      </div>
+      </div>
     </div>
   )
 }
