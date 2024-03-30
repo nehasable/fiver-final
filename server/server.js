@@ -3,7 +3,7 @@ const express=require("express")
 const mongoose=require("mongoose")
 const app=express()
 
-const url = 'mongodb://localhost:27017/fiver';
+const url = 'mongodb+srv://nehasable45:Neha12345@cluster0.z6oczab.mongodb.net/';
 
 mongoose.connect(url);
   
