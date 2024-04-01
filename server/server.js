@@ -3,9 +3,10 @@ const express=require("express")
 const mongoose=require("mongoose")
 const app=express()
 
-const url = 'mongodb+srv://nehasable45:Neha12345@cluster0.z6oczab.mongodb.net/';
+const port = process.env.PORT 
+const dbUrl = process.env.DB_URL;
 
-mongoose.connect(url);
+mongoose.connect(dbUrl);
   
   const db = mongoose.connection;
 
@@ -14,6 +15,6 @@ mongoose.connect(url);
   });
 app.use("/api/users",UserRouter)  
 
-app.listen("8000",()=>{
+app.listen(port,()=>{
     console.log("connected")
 })
