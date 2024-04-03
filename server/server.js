@@ -2,6 +2,9 @@ const UserRouter = require("./routes/user_route.js");
 const express=require("express")
 const mongoose=require("mongoose")
 const app=express()
+require('dotenv').config();
+
+
 
 const port = process.env.PORT 
 const dbUrl = process.env.DB_URL;
