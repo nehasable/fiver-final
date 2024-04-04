@@ -1,0 +1,125 @@
+.auth-wrapper {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .blur-div {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    backdrop-filter: blur(10px);
+  }
+  
+  .auth-modal {
+    position: fixed;
+    z-index: 101;
+    background-color: #fff;
+  }
+  
+  .auth-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .auth-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .auth-social {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+  
+  .auth-social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-weight: 600;
+  }
+  
+  .auth-social-icon {
+    margin-right: 10px;
+  }
+  
+  .auth-social-facebook {
+    background-color: #3b5998;
+    color: #fff;
+  }
+  
+  .auth-social-google {
+    border: 1px solid #ccc;
+    color: #333;
+  }
+  
+  .auth-or {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .auth-or-line {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #ccc;
+  }
+  
+  .auth-or-text {
+    position: relative;
+    background-color: #fff;
+    padding: 0 10px;
+  }
+  
+  .auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+  
+  .auth-input {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .auth-button {
+    background-color: #1dbf73;
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+  
+  .auth-switch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+  }
+  
+  .auth-switch-text {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .auth-switch-link {
+    color: #1dbf73;
+    cursor: pointer;
+  }
+  

@@ -14,11 +14,13 @@ import Mygigs from './pages/mygigs/Mygigs'
 import Add from './pages/add/Add'
 import Messages from './pages/messages/Messages'
 import Message from './pages/message/message'
+import AuthWrapper from './components/AuthWrapper'
 function App() {
   const Layout =()=>{
 return(
   <>
   <Navbar/>
+  <AuthWrapper/>
   <Outlet/>  
  <Footer/>
  </>
